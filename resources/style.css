@@ -1,0 +1,276 @@
+
+/* css reset */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Main style here */
+
+/* header styles */
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header #logo {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+header #logo img {
+  width: 50px;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+/* header nav */
+
+header #main-navigation {
+  text-align: right;
+}
+
+
+header #main-navigation ul {
+  list-style: none;
+  padding: 0;
+  vertical-align: middle;
+}
+
+header #main-navigation ul li {
+  display: inline-block;
+}
+
+header #main-navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 0.3s ease all;
+}
+
+header #main-navigation ul li a:hover {
+  background: #444;
+
+}
+
+/* footer styles */
+footer {
+  background: #222;
+  color: #777;
+  padding: 30px;
+  text-align: center;
+}
+
+footer img {
+  display: block;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+/* main content */
+
+/* hero style */
+
+.hero {
+  min-height: 680px;
+  text-align: center;
+  background: #555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  line-height: 1;
+  background-image: url('../img/aurora.jpg');
+  background-size: cover;
+}
+
+.hero .hero-title {
+  font-size: 90px;
+}
+
+.hero .hero-content p {
+  font-size: 60px;
+}
+
+.hero .hero-content a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 15px 30px;
+  margin-right: 10px;
+}
+
+/* section styles */
+.site-section {
+  padding: 50px 0;
+  min-height: 680px;
+  max-width: 100%;
+  background: #DFE0DC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-section {
+  background: #F3E9DC;
+}
+
+.site-section .section-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #777;
+}
+
+.f-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.f-box, .t-box {
+  width: 90%;
+}
+
+.feature-box {
+  padding: 20px 30px;
+}
+
+.feature-box img {
+  width: 80px;
+}
+
+.feature-box h5 {
+  font-size: 20px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.feature-box p {
+  text-align: left;
+}
+
+/* testimonial styles */
+.t-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonial-box {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-content {
+  margin: 20px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.testimonial-box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.testimonial-author {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonial-author .t-cont {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.testimonial-author h5 {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.testimonial-author span {
+  color: #999;
+  font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  header #logo {
+  text-align: center;
+  }
+
+  header #main-navigation {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .f-box {
+    display: block;
+  }
+
+  .t-box {
+    display: block;
+  }
+
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-title {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
+
+  .hero-content p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 15px
+  }
+
+  .hero-content a {
+    font-size: 10px;
+  }
+}
